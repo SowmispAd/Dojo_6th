@@ -13,12 +13,12 @@ def letterCombinations(digits):
         '9' : 'wxyz'
     }
     res = [""]
-    for digit in digits:
-        temp = []
-        for prefix in res:
-            for ch in phone[digit]:
-                temp.append(prefix+ch)
-        res = temp
+    def backtrack(index,path):
+        if index== len(digits):
+            res.append(path)
+            return
+        for ch in phone[digits[index]]:
+            backtrack(index+1,path+ch)
     return res
 result = letterCombinations(digits)
 print(*result)
