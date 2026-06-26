@@ -1,27 +1,25 @@
 def sumSubarrayMin(arr):
+    mod = 10**9+7
     n = len(arr)
-    min_sum = 0
+    left = [0] * n
+    right = [0] * n
+    stack = []
+    for i in range(n):
+        while stack and arr[stack[-1]] > arr[i]:
+            stack.pop()
+        left[i] = i - stack[-1] if stack else i+1
+        stack.append(i)
+    stack = []
+    for i in range(n-1,-1,-1):
+        while stack and arr[stack[-1]] >= arr[i]:
+            stack.pop()
+        right[i] = stack[-1] - i if stack else n - i
+        stack.append(i)
+    ans = 0
+    for i in range(n):
+        ans = (ans + arr[i]*left[i]*right[i])%mod
+    return ans
 
-    def backtrack(start, end, curr_min):
-        nonlocal min_sum
-
-        if end == n:
-            return
-
-        curr_min = min(curr_min, arr[end])
-        min_sum += curr_min
-
-        backtrack(start, end + 1, curr_min)
-
-    def generate(start):
-        if start == n:
-            return
-
-        backtrack(start, start, float('inf'))
-        generate(start + 1)
-
-    generate(0)
-    return min_sum
 
 arr = list(map(int, input().split()))
 print(sumSubarrayMin(arr))
