@@ -14,6 +14,13 @@ print(removeKDigits(num,k))
 
 
 """
-
+| Aspect               | Analysis                                                                                                                 |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **Approach Used**    | **Monotonic increasing stack (Greedy + Stack)**                                                                          |
+| **Time Complexity**  | **O(n)** (each digit is pushed and popped at most once)                                                                  |
+| **Space Complexity** | **O(n)** (stack storage for digits)                                                                                      |
+| **Optimal?**         | **Yes**. This is the standard optimal solution for removing k digits problem                                             |
+| **Key Idea**         | Maintain increasing stack so larger digits are removed early to minimize number; leftover `k` handled by trimming suffix |
+| **Correctness**      | Correct, handles leading zeros and leftover removals properly                                                            |
 
 """

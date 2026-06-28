@@ -16,11 +16,13 @@ def maxOperations(nums,k):
     return count
 
 """
-Summary
-Approach: Sorting + Two Pointers
-Time Complexity: O(n log n)
-Space Complexity:
-O(1) auxiliary (algorithmic, excluding sort)
-O(n) worst-case due to Python's list.sort() implementation (Timsort)
+| Aspect                          | Analysis                                                                                               |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| **Approach Used**               | **Two Pointers after Sorting (Greedy Pairing)**                                                        |
+| **Time Complexity**             | **O(n log n)** (due to sorting)                                                                        |
+| **Space Complexity**            | **O(1)** auxiliary (ignoring sort’s internal space)                                                    |
+| **Optimal?**                    | **Yes (for sorting-based solution)**. However, an **O(n)** optimal alternative exists using a hashmap. |
+| **Key Idea**                    | Sort array, then use two pointers to greedily match pairs summing to `k`                               |
+| **Alternative Better Approach** | **HashMap frequency approach gives O(n) time complexity** without sorting                              |
 
 """

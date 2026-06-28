@@ -16,7 +16,7 @@ Maximize the Confusion of an Exam
 Max Number of K-Sum Pairs
 **Sum of Subarray Minimums**
 Push Dominoes
-N-Queens
+*N-Queens*
 Subsets II
 Combination Sum III
 Word Search
@@ -41,7 +41,7 @@ Permutations II
 Combination Sum II
 **Word Search II**
 Generate Parentheses
-**Palindrome Partitioning**
+**Palindrome Partitioning** - Not optimized
 **Word Break**
 **Restore IP Addresses**
 Unique Paths II
@@ -57,7 +57,7 @@ Watering Plants II
 The Number of Beautiful Subsets
 Maximum candies can be distributed among children
 Minimum number of fair pairs
-Count number of small elements than self
+*Count number of small elements than self*
 Friends of appropriate ages
 Min stack
 **Next permutation**
@@ -66,3 +66,5 @@ sliding Window Maximum
 
 # Dojo_6th
 These are the questions
+**Bold** --> Tough
+*Italic* --> Not optimized solution

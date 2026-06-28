@@ -33,9 +33,14 @@ res = pushDominoes(dominoes)
 print(*res)
 
 """
-Summary
-Approach: Force Simulation (Net Force / Two-Pass Force Propagation)
-Time Complexity: O(n)
-Space Complexity: O(n)
+| Aspect                | Analysis                                                                                                                                                                        |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Approach Used**     | **Two-pass force propagation (prefix + suffix simulation)**                                                                                                                     |
+| **Time Complexity**   | **O(n)** (two linear scans over the string)                                                                                                                                     |
+| **Space Complexity**  | **O(n)** (forces array + output string)                                                                                                                                         |
+| **Optimal?**          | **Yes**. This is one of the standard optimal solutions for the Dominoes problem                                                                                                 |
+| **Key Idea**          | Simulate right force in left-to-right pass and left force in right-to-left pass, then combine net force                                                                         |
+| **Issues in Code**    | Input handling is incorrect (`dominoes = list(map(str,input().split()))` makes it a list of words, not a string), and final print expects a string but receives list characters |
+| **Correct Input Fix** | `dominoes = input().strip()`                                                                                                                                                    |
 
 """

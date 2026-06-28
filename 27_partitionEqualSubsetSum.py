@@ -13,9 +13,13 @@ arr = list(map(int,input().split()))
 print(canPartition(arr))
 
 """
-Summary
-Approach: Dynamic Programming (0/1 Knapsack / Space-Optimized Subset Sum)
-Time Complexity: O(n × target), where target = totalSum / 2
-Space Complexity: O(target)
+| Aspect               | Analysis                                                                                                                           |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **Approach Used**    | **0/1 Knapsack (Subset Sum using 1D Dynamic Programming)**                                                                         |
+| **Time Complexity**  | **O(n × target)** where `target = sum(nums) / 2`                                                                                   |
+| **Space Complexity** | **O(target)** (1D DP optimization)                                                                                                 |
+| **Optimal?**         | **Yes** for this problem. This is the standard optimal DP solution for Partition Equal Subset Sum                                  |
+| **Key Idea**         | Reduce problem to checking if a subset sums to `total/2`, and use reverse iteration to avoid recomputation (0/1 knapsack behavior) |
+| **Correctness**      | Correct implementation and handles all cases efficiently                                                                           |
 
 """

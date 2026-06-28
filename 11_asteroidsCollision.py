@@ -16,9 +16,13 @@ for x in arr:
 print(*stack)
 
 """
-Summary
-Approach: Stack (simulation of collisions)
-Time Complexity: O(n)
-Space Complexity: O(n)
+| Aspect               | Analysis                                                                                                                                                                     |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Approach Used**    | **Stack-based collision simulation (typical “asteroid collision” style problem)**                                                                                            |
+| **Time Complexity**  | **O(n)** (each element is pushed/popped at most once)                                                                                                                        |
+| **Space Complexity** | **O(n)** (stack storage in worst case)                                                                                                                                       |
+| **Optimal?**         | **Yes** for this class of collision problems, since each element must be processed at least once                                                                             |
+| **Issues in Code**   | `alive` is used without initialization for each `x`, and logic does not properly handle all collision cases (especially when multiple pops or surviving states are involved) |
+
 
 """
