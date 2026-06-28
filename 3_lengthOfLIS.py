@@ -17,3 +17,13 @@ def lengthOfLIS(nums):
     return len(lis)
 nums = list(map(int,input().split()))
 print(lengthOfLIS(nums))
+
+"""
+| Aspect               | Answer                                    |
+| -------------------- | ----------------------------------------- |
+| **Approach**         | Binary Search + Greedy (Patience Sorting) |
+| **Time Complexity**  | **O(n log n)**                            |
+| **Space Complexity** | **O(n)**                                  |
+| **Optimized?**       | **Yes** (Optimal solution)                |
+
+"""

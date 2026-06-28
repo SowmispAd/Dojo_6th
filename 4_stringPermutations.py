@@ -29,4 +29,14 @@ def checkInclusion(s1,s2):
     return False
 print (checkInclusion(s1,s2))
 
+
+"""
+| Aspect               | Answer                                     |
+| -------------------- | ------------------------------------------ |
+| **Approach**         | Fixed Sliding Window + HashMap (`Counter`) |
+| **Time Complexity**  | **O(m)**, where `m = len(s2)`              |
+| **Space Complexity** | **O(1)**                                   |
+| **Optimized?**       | **Yes**                                    |
+
+"""
     

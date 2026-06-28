@@ -18,3 +18,13 @@ def maxCandiesAllocated(candies,k):
 candies = list(map(int,input().split()))
 k = int(input())
 print(maxCandiesAllocated(candies,k))
+
+"""
+| Aspect               | Answer                                     |
+| -------------------- | ------------------------------------------ |
+| **Approach**         | Binary Search on Answer                    |
+| **Time Complexity**  | **O(n log M)**, where **M = max(candies)** |
+| **Space Complexity** | **O(1)**                                   |
+| **Optimized?**       | **Yes**                                    |
+
+"""

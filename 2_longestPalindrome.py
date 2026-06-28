@@ -18,3 +18,12 @@ def longestPalindrome(s):
 s = input()
 print(longestPalindrome(s))
 
+"""
+| Aspect               | Answer                                                                                                                      |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **Approach**         | Expand Around Center                                                                                                        |
+| **Time Complexity**  | **O(n²)**                                                                                                                   |
+| **Space Complexity** | **O(1)**                                                                                                                    |
+| **Optimized?**       | **Yes** (Most commonly accepted optimal approach. A more advanced algorithm, Manacher's Algorithm, achieves **O(n)** time.) |
+
+"""

@@ -43,3 +43,14 @@ k = int(input())
 words = input().split()
 
 print(findWords(board, words))
+
+
+"""
+| Aspect               | Answer                                                                                                                                                                                                                                                                                                   |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Approach Used**    | **Trie (Prefix Tree) + Backtracking (DFS)**                                                                                                                                                                                                                                                              |
+| **Time Complexity**  | **O(W × L + m × n × 4 × 3^(L−1))** – Building the Trie takes **O(W × L)** (`W` = number of words, `L` = maximum word length). DFS starts from each of the `m × n` cells, exploring at most `4 × 3^(L−1)` paths (4 choices initially, then at most 3 thereafter due to not revisiting the previous cell). |
+| **Space Complexity** | **O(W × L + L)** – **O(W × L)** for the Trie and **O(L)** for the recursion stack (excluding the output list).                                                                                                                                                                                           |
+| **Is it Optimal?**   | **Yes.** This is the optimal approach. Using a Trie prunes invalid search paths early, making it significantly faster than searching each word independently with DFS.                                                                                                                                   |
+
+"""

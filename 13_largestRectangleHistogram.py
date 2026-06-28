@@ -25,3 +25,13 @@ def largestReactangleHistogram(heights):
     return max_area
 heights = list(map(int,input().split()))
 print(largestReactangleHistogram(heights))
+
+"""
+| Aspect               | Answer                                                                                                                                                            |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Approach Used**    | **Monotonic Increasing Stack**                                                                                                                                    |
+| **Time Complexity**  | **O(n)** – Each bar is pushed onto and popped from the stack at most once.                                                                                        |
+| **Space Complexity** | **O(n)** – The stack can store up to `n` indices in the worst case.                                                                                               |
+| **Is it Optimal?**   | **Yes.** This is the optimal solution. Every bar must be processed at least once, and the monotonic stack computes the largest rectangle in a single linear pass. |
+
+"""

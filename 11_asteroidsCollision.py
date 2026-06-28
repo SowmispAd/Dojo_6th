@@ -7,7 +7,18 @@ for x in arr:
             continue
         elif stack[-1] == -x:
             stack.pop()
-        break
-    else:
+            alive = False
+
+        else:
+            alive = False
+    if alive:
         stack.append(x)
 print(*stack)
+
+"""
+Summary
+Approach: Stack (simulation of collisions)
+Time Complexity: O(n)
+Space Complexity: O(n)
+
+"""

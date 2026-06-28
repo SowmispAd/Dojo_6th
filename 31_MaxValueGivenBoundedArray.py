@@ -21,3 +21,13 @@ def maxValue(n,index,maxsum):
 
 n, index, maxSum = map(int,input("Enter n, index, maxSum : ").split())
 print(maxValue(n,index,maxSum))
+
+"""
+| Aspect               | Answer                                                                                                                                                                                                                        |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Approach Used**    | **Binary Search on Answer + Mathematical (Arithmetic Series) Calculation**                                                                                                                                                    |
+| **Time Complexity**  | **O(log(maxSum))** – Binary search over the possible value range `[1, maxSum]`, with each validity check taking **O(1)**.                                                                                                     |
+| **Space Complexity** | **O(1)** – Uses only a constant number of variables.                                                                                                                                                                          |
+| **Is it Optimal?**   | **Yes.** This is the optimal solution. Since the answer lies within a monotonic range, binary search with constant-time validation achieves the best possible asymptotic complexity of **O(log(maxSum))** and **O(1)** space. |
+
+"""

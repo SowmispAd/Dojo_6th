@@ -13,3 +13,13 @@ def uniquePath2(obstacleGrid):
 rows, cols = map(int,input().split())
 obstacleGrid = [list(map(int,input().split())) for _ in range(rows)]
 print(uniquePath2(obstacleGrid))
+
+"""
+| Metric               | Value                                       |
+| -------------------- | ------------------------------------------- |
+| **Approach**         | Dynamic Programming (1D Space-Optimized DP) |
+| **Time Complexity**  | **O(m × n)**                                |
+| **Space Complexity** | **O(n)**                                    |
+| **Optimal?**         | **Yes**                                     |
+
+"""

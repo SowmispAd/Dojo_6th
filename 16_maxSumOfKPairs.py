@@ -14,3 +14,13 @@ def maxOperations(nums,k):
         else:
             right -= 1
     return count
+
+"""
+Summary
+Approach: Sorting + Two Pointers
+Time Complexity: O(n log n)
+Space Complexity:
+O(1) auxiliary (algorithmic, excluding sort)
+O(n) worst-case due to Python's list.sort() implementation (Timsort)
+
+"""

@@ -20,3 +20,14 @@ nums = list(map(int,input().split()))
 res = findSubsequence(nums)
 for i in res:
     print(*i)
+
+
+"""
+| Aspect               | Answer                                                                                                                                                                                                                                                   |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Approach Used**    | **Backtracking (DFS) + Hash Set for Duplicate Elimination**                                                                                                                                                                                              |
+| **Time Complexity**  | **O(n × 2ⁿ)** – There are up to `2ⁿ` recursive states (all subsets), and copying each valid subsequence into the result takes up to **O(n)**.                                                                                                            |
+| **Space Complexity** | **O(n)** auxiliary – Recursion stack and current `path` require **O(n)** space (excluding the output list).                                                                                                                                              |
+| **Is it Optimal?**   | **Yes.** Since the problem requires generating all non-decreasing subsequences, the output itself can be exponential in size. Any algorithm must spend at least **O(total output size)** time, making this backtracking approach asymptotically optimal. |
+
+"""

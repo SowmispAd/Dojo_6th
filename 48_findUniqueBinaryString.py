@@ -8,3 +8,14 @@ def findDifferentBinaryString(nums):
     return "".join(res)
 nums = list(map(str,input().split()))
 print(findDifferentBinaryString(nums))
+
+"""
+| Metric               | Value                                            |
+| -------------------- | ------------------------------------------------ |
+| **Approach**         | Cantor's Diagonalization (Diagonal Construction) |
+| **Time Complexity**  | **O(n)**                                         |
+| **Space Complexity** | **O(n)**                                         |
+| **Optimal?**         | **Yes**                                          |
+
+
+"""

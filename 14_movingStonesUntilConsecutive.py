@@ -12,3 +12,13 @@ def numMovesStones(a,b,c):
     return [min_moves, max_moves]
 a, b, c = map(int,input().split())
 print(numMovesStones(a,b,c))
+
+"""
+| Aspect               | Answer                                                                                                                                                                                    |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Approach Used**    | **Greedy + Mathematical Observation**                                                                                                                                                     |
+| **Time Complexity**  | **O(1)** – Performs a constant number of comparisons and arithmetic operations.                                                                                                           |
+| **Space Complexity** | **O(1)** – Uses only a constant amount of extra space.                                                                                                                                    |
+| **Is it Optimal?**   | **Yes.** This is the optimal solution. The answer is derived directly from the relative positions of the three stones using mathematical observations, requiring constant time and space. |
+
+"""

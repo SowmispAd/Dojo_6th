@@ -24,3 +24,13 @@ potions = list(map(int,input().split()))
 success = int(input())
 result = successfulPairs(spells,potions,success)
 print(*result)
+
+"""
+| Aspect               | Answer                                                                                                                                                                          |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Approach Used**    | **Sorting + Binary Search**                                                                                                                                                     |
+| **Time Complexity**  | **O(m log m + n log m)** – Sorting `potions` takes **O(m log m)**, and for each of the `n` spells, a binary search over `m` potions takes **O(log m)**.                         |
+| **Space Complexity** | **O(1)** auxiliary (excluding the output list). Python's built-in `sort()` uses **O(log m)** stack space in the worst case due to Timsort.                                      |
+| **Is it Optimal?**   | **Yes.** This is the optimal solution. Sorting the potions once and performing binary search for each spell achieves the best possible asymptotic complexity for this approach. |
+
+"""

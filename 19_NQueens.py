@@ -40,3 +40,12 @@ n = int(input())
 res = solveNQueens(n)
 for i in res:
     print(*i)
+"""
+| Aspect               | Answer                                                                                                                                                                                                                                                                        |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Approach Used**    | **Backtracking (DFS) + Safety Checking**                                                                                                                                                                                                                                      |
+| **Time Complexity**  | **O(n! × n)** – In the worst case, backtracking explores up to `n!` queen placements. Each `isSafe()` check takes **O(n)** (row, column, and diagonals).                                                                                                                      |
+| **Space Complexity** | **O(n²)** – The chessboard requires **O(n²)** space, and the recursion stack uses **O(n)** (excluding the output list).                                                                                                                                                       |
+| **Is it Optimal?**   | **No.** A more optimized solution uses **three hash sets (or bitmasks)** to track occupied columns and diagonals, reducing each safety check to **O(1)**. This improves the overall time complexity to **O(n!)** while using **O(n)** auxiliary space (excluding the output). |
+
+"""

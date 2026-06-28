@@ -38,3 +38,14 @@ matrix = [list(map(int,input().split())) for _ in range(rows)]
 setZeroes(matrix)
 for row in matrix:
     print(*row)
+
+
+"""
+| Aspect               | Answer                                                                                                                                                                                                                     |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Approach Used**    | **In-place Matrix Marking** (using the first row and first column as marker arrays)                                                                                                                                        |
+| **Time Complexity**  | **O(m × n)** – The matrix is traversed a constant number of times, where `m` is the number of rows and `n` is the number of columns.                                                                                       |
+| **Space Complexity** | **O(1)** – Uses only two boolean variables (`first_row_zero`, `first_col_zero`) in addition to the input matrix.                                                                                                           |
+| **Is it Optimal?**   | **Yes.** This is the optimal solution. Every cell must be inspected at least once, giving a lower bound of **O(m × n)** time, and using the first row and column as markers achieves the minimum **O(1)** auxiliary space. |
+
+"""

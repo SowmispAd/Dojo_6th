@@ -55,5 +55,14 @@ Non-decreasing Subsequences
 Gas Station
 Watering Plants II
 The Number of Beautiful Subsets
+Maximum candies can be distributed among children
+Minimum number of fair pairs
+Count number of small elements than self
+Friends of appropriate ages
+Min stack
+Next permutation
+Combination sum
+sliding Window Maximum
+
 # Dojo_6th
 These are the questions

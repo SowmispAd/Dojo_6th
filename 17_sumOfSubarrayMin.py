@@ -23,3 +23,13 @@ def sumSubarrayMin(arr):
 
 arr = list(map(int, input().split()))
 print(sumSubarrayMin(arr))
+
+"""
+| Aspect               | Answer                                                                                                                                                             |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Approach Used**    | **Monotonic Increasing Stack + Contribution Technique** (computing Previous Less Element and Next Less-or-Equal Element)                                           |
+| **Time Complexity**  | **O(n)** – Each element is pushed onto and popped from the stack at most once in each traversal, followed by one linear pass to compute the answer.                |
+| **Space Complexity** | **O(n)** – Uses two arrays (`left`, `right`) and a stack, each of size at most `n`.                                                                                |
+| **Is it Optimal?**   | **Yes.** This is the optimal solution. Every element must be processed at least once, and the monotonic stack computes each element's contribution in linear time. |
+
+"""

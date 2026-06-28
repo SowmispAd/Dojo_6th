@@ -31,3 +31,11 @@ def pushDominoes(self, dominoes: str) -> str:
 dominoes = list(map(str,input().split()))
 res = pushDominoes(dominoes)
 print(*res)
+
+"""
+Summary
+Approach: Force Simulation (Net Force / Two-Pass Force Propagation)
+Time Complexity: O(n)
+Space Complexity: O(n)
+
+"""

@@ -19,3 +19,13 @@ def permutate(nums):
 nums = list(map(int,input().split()))
 res = permutate(nums)
 print(*res)
+
+"""
+| Aspect               | Answer                                                                                                                                          |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Approach Used**    | **Backtracking (DFS) with Used Array (Permutation Generation)**                                                                                 |
+| **Time Complexity**  | **O(n × n!)** – There are `n!` permutations, and copying each permutation into `res` takes **O(n)**.                                            |
+| **Space Complexity** | **O(n)** auxiliary – Recursion depth + `used` array both take **O(n)** space (excluding output list).                                           |
+| **Is it Optimal?**   | **Yes.** This is the optimal approach. Since the output itself contains `n!` permutations, any algorithm must take at least **O(n × n!)** time. |
+
+"""

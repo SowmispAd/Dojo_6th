@@ -11,3 +11,11 @@ def canPartition(nums):
     return dp[target]
 arr = list(map(int,input().split()))
 print(canPartition(arr))
+
+"""
+Summary
+Approach: Dynamic Programming (0/1 Knapsack / Space-Optimized Subset Sum)
+Time Complexity: O(n × target), where target = totalSum / 2
+Space Complexity: O(target)
+
+"""

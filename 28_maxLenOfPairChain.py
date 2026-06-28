@@ -10,3 +10,14 @@ def findLongestChain(pairs):
     return count
 pairs = ast.literal_eval(input())
 print(findLongestChain(pairs))
+
+"""
+Summary
+
+Approach : Greedy (Activity Selection)
+Sorting Key : Pair end value
+Time Complexity : O(n log n)
+Space Complexity : O(1) auxiliary
+Optimal? Yes
+
+"""

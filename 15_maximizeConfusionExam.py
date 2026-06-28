@@ -17,3 +17,13 @@ def maxConsecutiveAnswers(answerKey,k):
 answerKey = input()
 k = int(input())
 print(maxConsecutiveAnswers(answerKey,k))
+
+"""
+| Aspect               | Answer                                                                                                                                            |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Approach Used**    | **Sliding Window (run twice: once treating `'T'` as the target and once treating `'F'` as the target)**                                           |
+| **Time Complexity**  | **O(n)** – The sliding window traverses the string once for `'T'` and once for `'F'`, resulting in **O(2n) = O(n)**.                              |
+| **Space Complexity** | **O(1)** – Uses only a constant number of variables.                                                                                              |
+| **Is it Optimal?**   | **Yes.** This is the optimal solution. Every character must be examined at least once, so **O(n)** time and **O(1)** auxiliary space are optimal. |
+
+"""

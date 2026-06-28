@@ -25,3 +25,14 @@ def totalRainwaterTrapped(height):
 
 hei = list(map(int, input().split()))
 print(totalRainwaterTrapped(hei))
+
+"""
+| Metric               | Value                                         |
+| -------------------- | --------------------------------------------- |
+| **Approach**         | Two Pointers with Running Left/Right Maximums |
+| **Time Complexity**  | **O(n)**                                      |
+| **Space Complexity** | **O(1)**                                      |
+| **Optimal?**         | **Yes**                                       |
+
+
+"""

@@ -12,3 +12,13 @@ def generateParenthesis(n):
     return ans
 n = int(input())
 print(generateParenthesis(n))
+
+"""
+| Aspect               | Answer                                                                                                                                                                                                                                  |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Approach Used**    | **Backtracking (DFS)**                                                                                                                                                                                                                  |
+| **Time Complexity**  | **O(Cₙ × n)** – `Cₙ` is the **n-th Catalan number** (approximately `4ⁿ / (n^(3/2)√π)`). There are `Cₙ` valid parenthesis strings, and constructing each string takes **O(n)**.                                                          |
+| **Space Complexity** | **O(n)** auxiliary – Maximum recursion depth is `2n` (i.e., **O(n)**), excluding the output list.                                                                                                                                       |
+| **Is it Optimal?**   | **Yes.** Since the problem requires generating all valid parenthesis combinations, the output size itself is **Θ(Cₙ × n)**. Any algorithm must spend at least this much time, making this backtracking solution asymptotically optimal. |
+
+"""

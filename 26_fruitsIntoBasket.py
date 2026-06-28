@@ -15,3 +15,13 @@ def totalFruits(fruits):
 
 fruits = list(map(int,input().split()))
 print(totalFruits(fruits))
+
+"""
+| Aspect               | Answer                                                                                                                                         |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Approach Used**    | **Sliding Window + Hash Map (Frequency Counter)**                                                                                              |
+| **Time Complexity**  | **O(n)** – Each element is added to and removed from the sliding window at most once.                                                          |
+| **Space Complexity** | **O(1)** – The hash map stores at most **2** fruit types, so the auxiliary space is constant.                                                  |
+| **Is it Optimal?**   | **Yes.** This is the optimal solution. Every fruit must be processed at least once, so **O(n)** time and **O(1)** auxiliary space are optimal. |
+
+"""

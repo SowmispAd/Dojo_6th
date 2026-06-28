@@ -10,4 +10,10 @@ def removeKDigits(num,k):
     return result if result else '0'
 num = input()
 k = int(input())
-print(removeKDigits(num,k))
+print(removeKDigits(num,k))  
+
+
+"""
+
+
+"""

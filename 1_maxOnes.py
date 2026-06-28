@@ -23,3 +23,13 @@ n = int(input())
 nums = list(map(int,input().split()))
 k = int(input())
 print(longestOnes(nums,k))
+
+"""
+| Aspect               | Answer                                                                                                                                          |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Approach Used**    | **Sliding Window (Two Pointers) + Greedy**                                                                                                      |
+| **Time Complexity**  | **O(n)** – Each element is visited at most twice (once by `right`, once by `left`).                                                             |
+| **Space Complexity** | **O(1)** – Uses only a fixed number of variables (`left`, `zeros`, `max_len`).                                                                  |
+| **Is it Optimal?**   | **Yes.** This is the optimal solution. Every element must be processed at least once, so **O(n)** time and **O(1)** space is the best possible. |
+
+"""

@@ -6,3 +6,14 @@ def maxProfit(nums):
     return profit
 prices = list(map(int,input().split()))
 print(maxProfit(prices))
+
+"""
+| Metric               | Value                                    |
+| -------------------- | ---------------------------------------- |
+| **Approach**         | Greedy (Accumulate Positive Differences) |
+| **Time Complexity**  | **O(n)**                                 |
+| **Space Complexity** | **O(1)**                                 |
+| **Optimal?**         | **Yes**                                  |
+
+
+"""

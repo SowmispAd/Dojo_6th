@@ -19,3 +19,14 @@ def splitString(s):
     return False
 s = input()
 print(splitString(s))
+
+
+"""
+| Aspect               | Answer                                                                                                                                                                                                                             |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Approach Used**    | **Backtracking (DFS) + Recursive Partitioning**                                                                                                                                                                                    |
+| **Time Complexity**  | **O(2ⁿ)** (worst case, explores exponentially many possible partitions of the string)                                                                                                                                              |
+| **Space Complexity** | **O(n)** (recursion stack depth up to `n`)                                                                                                                                                                                         |
+| **Is it Optimal?**   | **Yes.** This is the standard optimal approach for this problem because there is no known polynomial-time algorithm. In the worst case, multiple partition possibilities must be explored, leading to exponential time complexity. |
+
+"""

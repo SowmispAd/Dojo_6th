@@ -14,3 +14,13 @@ if __name__ == "__main__":
 
     result = countSmaller(nums)
     print(*result)
+
+"""
+| Aspect               | Answer                                                                                                                                                                 |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Approach Used**    | **Binary Search + Sorted List (using `bisect_left` and `insort`)**                                                                                                     |
+| **Time Complexity**  | **O(n²)** – `bisect_left` takes **O(log n)**, but `insort` requires shifting elements in a Python list, taking **O(n)**. Repeated for `n` elements.                    |
+| **Space Complexity** | **O(n)** – for the `sorted_arr` and the output list.                                                                                                                   |
+| **Is it Optimal?**   | **No.** More optimized solutions use a **Fenwick Tree (Binary Indexed Tree)**, **Segment Tree**, or **Merge Sort** to achieve **O(n log n)** time with **O(n)** space. |
+
+"""
