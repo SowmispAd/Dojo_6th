@@ -14,7 +14,7 @@ Largest Rectangle in Histogram
 Moving Stones Until Consecutive
 Maximize the Confusion of an Exam
 Max Number of K-Sum Pairs
-Sum of Subarray Minimums
+**Sum of Subarray Minimums**
 Push Dominoes
 N-Queens
 Subsets II
@@ -26,32 +26,32 @@ Moving Stones Until Consecutive II
 Fruit Into Baskets
 Partition Equal Subset Sum
 Maximum Length of Pair Chain
-Permutation Sequence
+**Permutation Sequence**
 Trapping Rain Water
 Maximum Value at a Given Index in a Bounded Array
 Letter Combinations of a Phone Number
 3Sum Closest
 Bag of Tokens
-K-th Smallest Prime Fraction
+**K-th Smallest Prime Fraction**
 Maximize Greatness of an Array
 Number of Subarrays with Bounded Maximum
 Boats to Save People
 Subsets
 Permutations II
 Combination Sum II
-Word Search II
+**Word Search II**
 Generate Parentheses
-Palindrome Partitioning
-Word Break
-Restore IP Addresses
+**Palindrome Partitioning**
+**Word Break**
+**Restore IP Addresses**
 Unique Paths II
 Find Unique Binary String
-Splitting a String Into Descending Consecutive Values
+**Splitting a String Into Descending Consecutive Values**
 Best Time to Buy and Sell Stock II
 3Sum
 Set Matrix Zeroes
 Jump Game II
-Non-decreasing Subsequences
+**Non-decreasing Subsequences**
 Gas Station
 Watering Plants II
 The Number of Beautiful Subsets
@@ -60,7 +60,7 @@ Minimum number of fair pairs
 Count number of small elements than self
 Friends of appropriate ages
 Min stack
-Next permutation
+**Next permutation**
 Combination sum
 sliding Window Maximum
 
