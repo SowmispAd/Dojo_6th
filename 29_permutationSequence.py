@@ -6,13 +6,13 @@ def getPermutation(n, k):
     k -= 1
     ans = []
     while nums:
-        index = k // fact
+        index = k // fact                   # Remeber k // fact
         ans.append(nums.pop(index))
-        k %= fact
+        k %= fact # Remeber this
         if not nums:
             break
         fact //= len(nums)
-    return " ".join(ans)
+    return "".join(ans)
 n,k = map(int,input().split())
 print(getPermutation(n,k))
 

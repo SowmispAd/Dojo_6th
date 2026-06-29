@@ -5,12 +5,12 @@ def bagOfTokens(tokens,power):
     right = n - 1
     score = 0
     max_score = 0
-    while left <= right:
+    while left <= right:  # <= is important
         if power >= tokens[left]:
             power -= tokens[left]
             score += 1
             left += 1
-            max_score = max(max_score,score)
+            max_score = max(max_score,score) # look ant this 👀👀
         elif score > 0:
             power += tokens[right]
             score -= 1

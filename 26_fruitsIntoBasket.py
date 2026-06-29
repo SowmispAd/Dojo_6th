@@ -9,7 +9,7 @@ def totalFruits(fruits):
             count[fruits[left]] -= 1
             if count[fruits[left]] == 0:
                 del count[fruits[left]]
-            left += 1
+            left += 1 # Don't forget the increment of left
         max_count = max(max_count,right - left + 1)
     return max_count
 

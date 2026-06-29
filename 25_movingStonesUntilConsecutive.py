@@ -1,8 +1,8 @@
 def movingStonesUntilConsecutiveII(stones):
-    stones.sort()
+    stones.sort() # Must use sorting
     n = len(stones)
     max_moves = max(stones[n-1]-stones[1]-(n-2),stones[n-2]-stones[0]-(n-2))
-    min_moves = n
+    min_moves = n # Make sure it is n
     left = 0
     for right in range(n):
         while stones[right] - stones[left] + 1 > n:

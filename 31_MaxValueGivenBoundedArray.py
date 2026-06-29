@@ -7,12 +7,12 @@ def maxValue(n,index,maxsum):
             return (peak - 1) * peak // 2 + (length - (peak - 1))
     def valid(x):
         left = calc(x,index)
-        right = calc(x,n - index - 1)
+        right = calc(x,n - index - 1) #make sure u have -1
         total = left + right + x
         return total <= maxsum
     lo, hi = 1, maxsum
     while lo <= hi:
-        mid = (lo + hi) // 2
+        mid = (lo + hi) // 2 
         if valid(mid):
             lo = mid + 1
         else:

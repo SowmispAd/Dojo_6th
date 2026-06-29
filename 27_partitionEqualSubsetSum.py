@@ -6,7 +6,7 @@ def canPartition(nums):
     dp = [False] * (target+1)
     dp[0] = True
     for num in nums:
-        for j in range  (target, num-1,-1):
+        for j in range  (target, num-1,-1): # remeber the ranges
             dp[j] = dp[j] or dp[j -num]
     return dp[target]
 arr = list(map(int,input().split()))
