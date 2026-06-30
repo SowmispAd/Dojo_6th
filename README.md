@@ -62,6 +62,7 @@ Friends of appropriate ages
 Min stack
 **Next permutation**
 Combination sum
+Sum of sub array Ranges 
 sliding Window Maximum
 
 # Dojo_6th
