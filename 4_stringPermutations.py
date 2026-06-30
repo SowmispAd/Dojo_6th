@@ -23,9 +23,6 @@ def checkInclusion(s1,s2):
             del window[s2[i-n]]
         if window == need:
             return True
-
-
-
     return False
 print (checkInclusion(s1,s2))
 
