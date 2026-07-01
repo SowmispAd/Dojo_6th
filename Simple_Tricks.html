@@ -1,0 +1,47 @@
+Simple Tricks to Find Time Complexity
+
+
+| Pattern                                   | Time Complexity               |
+| ----------------------------------------- | ----------------------------- |
+| One loop                                  | **O(n)**                      |
+| Two nested loops                          | **O(n²)**                     |
+| Three nested loops                        | **O(n³)**                     |
+| Loop halves/doubles (`i *= 2`, `i //= 2`) | **O(log n)**                  |
+| Loop + Binary Search                      | **O(n log n)**                |
+| Sorting                                   | **O(n log n)**                |
+| Recursion (one call)                      | Multiply by recursion depth   |
+| Backtracking                              | Usually **O(branches^depth)** |
+
+
+Simple Tricks to Find Space Complexity
+
+Count only the extra memory used by the algorithm
+
+| Extra Memory Used                  | Space Complexity |
+| ---------------------------------- | ---------------- |
+| Only variables (`i`, `sum`, `max`) | **O(1)**         |
+| One array/list of size `n`         | **O(n)**         |
+| Two arrays of size `n`             | **O(n)**         |
+| `n × n` matrix                     | **O(n²)**        |
+| Recursion depth `n`                | **O(n)**         |
+| Recursion depth `log n`            | **O(log n)**     |
+
+
+Quick Cheat Sheet
+
+
+| If you see...                         | Time       | Space                        |
+| ------------------------------------- | ---------- | ---------------------------- |
+| One loop                              | O(n)       | O(1)                         |
+| Two nested loops                      | O(n²)      | O(1)                         |
+| Three nested loops                    | O(n³)      | O(1)                         |
+| Sorting                               | O(n log n) | Depends on sorting algorithm |
+| Binary Search                         | O(log n)   | O(1)                         |
+| Hash Set/Dictionary operations        | O(n)       | O(n)                         |
+| Stack/Queue with at most `n` elements | O(n)       | O(n)                         |
+| Dynamic Programming table             | Varies     | O(n) or O(n²)                |
+| Monotonic Stack                       | O(n)       | O(n)                         |
+| Tree DFS/BFS                          | O(n)       | O(h) recursion or O(n) queue |
+| Graph DFS/BFS                         | O(V + E)   | O(V)                         |
+
+

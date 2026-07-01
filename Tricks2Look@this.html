@@ -1,0 +1,186 @@
+# DSA Interview Shortcut Sheet
+
+Instead of deriving complexity from scratch every time, memorize these patterns.
+
+| Pattern you see                  | Immediately think                 | Time                | Space                  |
+| -------------------------------- | --------------------------------- | ------------------- | ---------------------- |
+| Single `for`/`while` loop        | Scan once                         | O(n)                | O(1)                   |
+| Two nested loops                 | Every element with every other    | O(n²)               | O(1)                   |
+| Three nested loops               | Triple combinations               | O(n³)               | O(1)                   |
+| Loop where `i *= 2` or `i //= 2` | Binary reduction                  | O(log n)            | O(1)                   |
+| Loop + Binary Search             | Search for every element          | O(n log n)          | O(1)                   |
+| Sorting                          | Built-in sort                     | O(n log n)          | Usually O(n) in Python |
+| HashSet/HashMap                  | Fast lookup                       | O(n)                | O(n)                   |
+| Stack                            | Push/pop once                     | O(n)                | O(n)                   |
+| Queue                            | Enqueue/dequeue once              | O(n)                | O(n)                   |
+| Two Pointers                     | Left & right move once            | O(n)                | O(1)                   |
+| Sliding Window                   | Window expands/shrinks once       | O(n)                | O(1)                   |
+| Prefix Sum                       | One preprocessing pass            | O(n)                | O(n)                   |
+| Difference Array                 | Range updates                     | O(n)                | O(n)                   |
+| Monotonic Stack                  | Each element pushed & popped once | O(n)                | O(n)                   |
+| Monotonic Queue                  | Each element enters/leaves once   | O(n)                | O(n)                   |
+| Heap/Priority Queue              | Insert/Delete                     | O(log n)            | O(n)                   |
+| Heap for all `n` elements        | Repeated heap operations          | O(n log n)          | O(n)                   |
+| Binary Search                    | Divide by 2 each step             | O(log n)            | O(1)                   |
+| DFS/BFS on Tree                  | Visit each node once              | O(n)                | O(h) DFS, O(n) BFS     |
+| DFS/BFS on Graph                 | Visit every vertex & edge         | O(V + E)            | O(V)                   |
+| Union-Find                       | Nearly constant                   | O(α(n))             | O(n)                   |
+| DP (1D)                          | One state per index               | O(n)                | O(n) or O(1)           |
+| DP (2D Grid)                     | One state per cell                | O(n²)               | O(n²)                  |
+| Backtracking                     | Try every possibility             | Usually Exponential | Exponential/Recursion  |
+| Bit Manipulation                 | One pass                          | O(n)                | O(1)                   |
+
+----------------------------------------
+
+# Super Easy Time Complexity Trick
+
+Ask these questions in order.
+
+### 1. How many loops?
+
+```
+1 loop      → O(n)
+2 loops     → O(n²)
+3 loops     → O(n³)
+```
+
+----------------------------------------
+
+### 2. Does the input get cut in half?
+
+```python
+while low <= high:
+```
+
+or
+
+```python
+mid = (low + high) // 2
+```
+
+→ O(log n)
+
+----------------------------------------
+
+### 3. Is there sorting?
+
+```python
+nums.sort()
+sorted(nums)
+```
+
+→ O(n log n)
+
+----------------------------------------
+
+### 4. Does every element enter and leave only once?
+
+Examples:
+
+* Sliding Window
+* Two Pointers
+* Monotonic Stack
+* BFS
+* DFS
+
+→ O(n)
+
+----------------------------------------
+
+### 5. Is every recursive call branching?
+
+```python
+dfs(i + 1)
+dfs(i + 2)
+```
+
+→ Usually Exponential
+
+----------------------------------------
+
+# Super Easy Space Complexity Trick
+
+Ignore:
+
+* Input array
+* Output required by the problem
+
+Only count the extra memory.
+
+### Count these
+
+Variables only
+
+→ O(1)
+
+----------------------------------------
+
+One list of size `n`
+
+→ O(n)
+
+----------------------------------------
+
+Dictionary/Set storing `n` elements
+
+→ O(n)
+
+----------------------------------------
+
+Stack holding `n` elements
+
+→ O(n)
+
+----------------------------------------
+
+Queue holding `n` elements
+
+→ O(n)
+
+----------------------------------------
+
+Matrix `n × n`
+
+→ O(n²)
+
+----------------------------------------
+
+Recursive depth = `n`
+
+→ O(n)
+
+----------------------------------------
+
+Recursive depth = `log n`
+
+→ O(log n)
+
+----------------------------------------
+
+# Pattern Recognition (Most Important)
+
+| If you read this in a problem...  | Think of...                  | Complexity            |
+| --------------------------------- | ---------------------------- | --------------------- |
+| "Subarray"                        | Sliding Window / Prefix Sum  | O(n)                  |
+| "Sorted array"                    | Binary Search / Two Pointers | O(log n) or O(n)      |
+| "Next Greater/Smaller"            | Monotonic Stack              | O(n)                  |
+| "Top K"                           | Heap                         | O(n log k)            |
+| "Shortest Path"                   | BFS / Dijkstra               | O(V + E) / O(E log V) |
+| "Connected Components"            | DFS / BFS / Union-Find       | O(V + E)              |
+| "Generate all subsets"            | Backtracking                 | O(2ⁿ)                 |
+| "Generate all permutations"       | Backtracking                 | O(n!)                 |
+| "Maximum/Minimum in every window" | Monotonic Queue              | O(n)                  |
+| "Repeated fast lookup"            | HashMap/HashSet              | O(1) average lookup   |
+
+----------------------------------------
+
+# Golden Rules (Works for 90% of DSA Problems)
+
+* Each element processed once → O(n)
+* Each element processed twice → Still O(n)
+* Nested loops over all elements → O(n²)
+* Input size halves each step → O(log n)
+* Sorting is involved → O(n log n)
+* Try all combinations/subsets → Exponential
+* Extra array/set/map/stack of size `n` → O(n) space
+* Only a few variables → O(1) space

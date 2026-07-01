@@ -11,3 +11,16 @@ def subarrayRanges(nums):
     return ans
 nums = list(map(int,input().split()))
 print(subarrayRanges(nums))
+
+"""
+| Aspect                       | Details                                                                                  |
+| ---------------------------- | ---------------------------------------------------------------------------------------- |
+| **Approach Used**            | Brute Force (Nested Loops with running minimum and maximum)                              |
+| **Time Complexity**          | **O(n²)**                                                                                |
+| **Space Complexity**         | **O(1)**                                                                                 |
+| **Optimal?**                 | **No**                                                                                   |
+| **Optimal Time Complexity**  | **O(n)**                                                                                 |
+| **Optimal Space Complexity** | **O(n)**                                                                                 |
+| **Optimal Approach**         | Monotonic Stacks (compute each element's contribution as maximum and minimum separately) |
+
+"""
